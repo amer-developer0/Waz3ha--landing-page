@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waz3ha - Distribute Your Budget Wisely</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="waz3ha.css"/>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-gray-800 font-sans transition-all duration-500 ease-in-out">
+  <!-- الشعار والتحكم -->
+  <header class="container mx-auto px-6 py-5 flex flex-wrap justify-between items-center gap-4">
+    <div class="flex items-center space-x-3">
+      <!-- الشعار الحقيقي -->
+      <img src="waz3ha_logo.png" alt="Waz3ha Logo" class="h-12 w-12 object-contain shadow-md" />
+      <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-900 to-indigo-900 bg-clip-text text-transparent">
+        Waz3ha
+      </h1>
+    </div>
+    <!-- زر الترجمة فقط -->
+    <button id="langToggle" class="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-sm flex items-center gap-2">
+      <span class="w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-green-500 flex-shrink-0"></span>
+      <span id="langText">العربية</span>
+    </button>
+  </header>
+
+  <!-- القسم الرئيسي -->
+  <section class="container mx-auto px-6 py-24 text-center max-w-5xl">
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+      <span class="bg-gradient-to-r from-blue-900 via-indigo-700 to-green-700 bg-clip-text text-transparent" data-en="Distribute Your Money" data-ar="وزّع فلوسك">
+        Distribute Your Money
+      </span>
+      <br />
+      <span class="text-gray-700 font-medium" data-en="With Wisdom & Balance" data-ar="بذكاء و توازن">
+        With Wisdom & Balance
+      </span>
+    </h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto" data-en="Waz3ha helps you smartly allocate your budget across savings, charity, fun, and more — with automatic rebalancing based on your priorities." 
+       data-ar="وزّعها صح يساعدك توزع ميزانيتك بذكاء بين الإدخار، الصدقة، الترفيه، وغيره — مع إعادة توازن تلقائية حسب أولوياتك.">
+      Waz3ha helps you smartly allocate your budget across savings, charity, fun, and more — with automatic rebalancing based on your priorities.
+    </p>
+    <button id="getStarted" class="group bg-gradient-to-r from-blue-700 to-green-600 hover:from-blue-800 hover:to-green-700 text-white font-semibold px-10 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-lg flex items-center gap-2 mx-auto hover:shadow-2xl focus:outline-none">
+      <span data-en="Get Started" data-ar="ابدأ الآن">Get Started</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-0 group-hover:opacity-100 transition-opacity" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </section>
+
+  <!-- المميزات -->
+  <section class="py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h3 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16" data-en="Why Waz3ha?" data-ar="ليه تستخدم وزّعها صح؟">
+        Why Waz3ha?
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mb-6 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h4 class="text-2xl font-semibold text-gray-800 mb-3" data-en="Smart Allocation" data-ar="توزيع ذكي">
+            Smart Allocation
+          </h4>
+          <p class="text-gray-600 leading-relaxed" data-en="Get AI-powered suggestions based on your financial priorities and goals." data-ar="خليك تحصل على اقتراحات مبنية على أولوياتك المالية وأهدافك.">
+            Get AI-powered suggestions based on your financial priorities and goals.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center mb-6 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357 2m15.357 2H15" />
+            </svg>
+          </div>
+          <h4 class="text-2xl font-semibold text-gray-800 mb-3" data-en="Auto-Rebalance" data-ar="إعادة توازن تلقائية">
+            Auto-Rebalance
+          </h4>
+          <p class="text-gray-600 leading-relaxed" data-en="Adjust one category, and the rest rebalance instantly based on importance." data-ar="عدّل بند واحد، والباقي يعيد توازنه فورًا حسب درجة الأهمية.">
+            Adjust one category, and the rest rebalance instantly based on importance.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center mb-6 shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h4 class="text-2xl font-semibold text-gray-800 mb-3" data-en="Export & Share" data-ar="صّدر وشارك">
+            Export & Share
+          </h4>
+          <p class="text-gray-600 leading-relaxed" data-en="Export your plan as PDF or Excel and share it with family or advisors." data-ar="صّدر خطتك كـ PDF أو Excel وشاركها مع عائلتك أو مستشارك المالي.">
+            Export your plan as PDF or Excel and share it with family or advisors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نموذج الإشعارات -->
+  <section class="py-20 px-6 bg-gradient-to-br from-indigo-900 to-blue-900 text-white">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h3 class="text-3xl md:text-5xl font-bold mb-6 leading-tight" data-en="Launching Soon!" data-ar="قريبًا جدًا!">
+        Launching Soon!
+      </h3>
+      <p class="text-xl opacity-90 mb-10" data-en="Be the first to know when Waz3ha launches. Enter your email below." data-ar="كن أول من يعرف عند إطلاق وزّعها صح. أدخل إيميلك أدناه.">
+        Be the first to know when Waz3ha launches. Enter your email below.
+      </p>
+      <form action="https://formspree.io/f/mrblnezz" method="POST" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="your@email.com"
+          class="flex-1 px-5 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-md"
+        />
+        <button
+          type="submit"
+          class="bg-white text-blue-900 hover:bg-gray-100 font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
+        >
+          <span data-en="Notify Me" data-ar="أبلغني">Notify Me</span>
+        </button>
+      </form>
+      <p class="mt-6 text-sm opacity-80" data-en="We respect your privacy. No spam." data-ar="احترام خصوصيتك. مش هنرسل سبام.">
+        We respect your privacy. No spam.
+      </p>
+    </div>
+  </section>
+
+  <!-- تذييل -->
+  <footer class="bg-gray-900 text-gray-400 py-10 text-center text-sm">
+    <p>&copy; <span id="year">2025</span> Waz3ha. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+    <p class="mt-2 text-xs opacity-70" data-en="Smart budgeting for a balanced life." data-ar="تخطيط مالي ذكي لحياة متوازنة.">
+      Smart budgeting for a balanced life.
+    </p>
+  </footer>
+
+  <script src="waz3ha.js"></script>
+</body>
+</html>
